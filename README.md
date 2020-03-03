@@ -3,4 +3,4 @@ Advanced css course by Jonas Schmedtmann in Udemy (udemy.com/course/advanced-css
 
 ## codepens
 
-- SCSS example: https://codepen.io/Lucas7796/pen/wvadbEO
+- SCSS example: https://codepen.io/Lucas7796/pen/wvadbEO (in this example I used variables, nestings, mixins, extends and functions)
