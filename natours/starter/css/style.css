@@ -95,8 +95,7 @@ body {
     transform: translate(0); } }
 
 .btn {
-  /* create a button behind the original button */
-  /* this makes the after button bigger */ }
+  /* create a button behind the original button */ }
   .btn:link, .btn:visited {
     text-transform: uppercase;
     text-decoration: none;
@@ -108,7 +107,11 @@ body {
     font-size: 1.6rem; }
   .btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2); }
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    /* this makes the after button bigger */ }
+    .btn:hover::after {
+      transform: scaleX(1.6) scaleY(1.4);
+      opacity: 0; }
   .btn:active {
     transform: translateY(-1px);
     box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.2); }
@@ -128,9 +131,6 @@ body {
     transition: all .4s; }
   .btn-white::after {
     background-color: #fff; }
-  .btn:hover::after {
-    transform: scaleX(1.6) scaleY(1.4);
-    opacity: 0; }
   .btn--animated {
     animation: moveInButton .5s ease-out .75s;
     animation-fill-mode: backwards; }
